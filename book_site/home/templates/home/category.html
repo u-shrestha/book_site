@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header-content %}
+    {% load static %}
+    <link href= "{% static 'css/home.css'%}" rel= "stylesheet">
+{% endblock %}
+
+{% block page-content %}
+
+    {% include 'box-slide1.html' %}
+    {% include 'box-slide2.html' %}
+    {% include 'box-slide4.html' %}
+    {% include 'box-slide5.html' %}
+    {% include 'box-slide6.html' %}
+    {% include 'box-slide9.html' %}
+    {% include 'box-slide8.html' %}
+
+{% endblock %}

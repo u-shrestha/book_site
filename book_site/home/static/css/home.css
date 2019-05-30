@@ -1,0 +1,141 @@
+.nav-pills >li>a.active {
+    background-color: #9bc1bc !important;
+
+}
+.nav li{
+	float: right !important;
+}
+
+/*carousel*/
+#dot li {
+  width: 10px ;
+  height: 10px ;
+  border-radius: 100%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+/*details*/
+.card-header{
+	background: #e2eaef;
+}
+h4{
+	padding:5px;
+	margin: 6px;
+	font-size: 1.1em;
+}
+
+/*box slider*/
+.bg{
+	background: #e2eaef;
+	height: 224px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+h2 {
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	border-radius: 1px;
+	background: #7ac400;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+.container{
+	margin-top:5%;
+	margin-bottom: 3%;
+}
+
+.carousel .item {
+	color: #747d89;
+	height:200px ;
+	overflow: hidden;
+}
+.carousel .item .img-box {
+	height: 200px;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+.carousel .item img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .carousel-control {
+	height: 44px;
+	width: 40px;
+	background: #7ac400;
+    margin: auto 0;
+    border-radius: 4px;
+	opacity: 0.8;
+}
+.carousel .carousel-control:hover {
+	background: #78bf00;
+	opacity: 1;
+}
+.carousel .carousel-control i {
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -19px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: #fff;
+	text-shadow: none;
+    font-weight: bold;
+}
+.carousel .carousel-control.left i {
+	margin-left: -2px;
+}
+.carousel .carousel-control.right i {
+	margin-right: -4px;
+}
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+}
+.carousel-indicators li {
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 992px) {
+  .col-md-1-5 { width: 20%; }
+  .col-md-2-5 { width: 40%; }
+  .col-md-3-5 { width: 60%; }
+  .col-md-4-5 { width: 80%; }
+  .col-md-5-5 { width: 100%; }
+}
+a {
+   text-decoration: none;
+
+}

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block header-content %}
+    {% load static %}
+    <link href= "{% static 'css/home.css'%}" rel= "stylesheet">
+{% endblock %}
+
+{% block page-content %}
+<div class="container w-75 my-2">
+    <div class="row w-75 ml-3">
+    <!-- Image -->
+        <div class="col-12 col-md-4 p-0">
+            <div class="card-body">
+                <img class="img-fluid" src="/media/{{ book.bcover }}" height="320px" width="270px" />
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 my-3 pr-0">
+
+            <h4> <b>Title: </b> {{ book.btitle }} </h4>
+            <h4> <b>Author: </b> {{ book.bauthor }} </h4>
+            <h4> <b>Genre: </b> {{ book.bgenre }} </h4>
+            <h4> <b>ISBN: </b> {{ book.bisbn }} </h4>
+            <h4> <b> Published Date: </b> {{ book.bpublished }} </h4>
+            <h4> <b> Published By: </b> {{ book.bpublished_by }} </h4>
+            <h4> <b>Pages: </b> {{ book.bpages }} </h4>
+            <h4> <b>Original Language: </b> {{ book.bo_lang }} </h4>
+        </div>
+    </div>
+
+    <div class="row">
+    <!-- Description -->
+        <div class="col-12">
+
+                <div class="card-header text-uppercase"><i class="fa fa-align-justify"></i>
+                    <a class="collapsed text-decoration-none" data-toggle="collapse" href="#desc">description </a> </div>
+
+            <div class="collapse" id="desc">
+            <div class="card-body">
+                <h5 class="text-justify">  {{ book.bdesc }} </h5>
+            </div>
+                </div>
+
+        </div>
+    </div>
+     <div class="row">
+    <div class="col-12 my-3">
+            <div class="card-header text-uppercase"><i class="fa fa-align-justify"></i>
+                 <a class="collapsed text-decoration-none" data-toggle="collapse" href="#">comment </a> </div>
+            <div class="card-body ">
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

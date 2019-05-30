@@ -1,0 +1,66 @@
+<div class= "container ">
+    <h2>fiction >> mystery </h2>
+
+    <div id="myCarousel5" class="carousel slide bg" data-ride="carousel" data-interval="0">
+    <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+
+            <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel5" data-slide-to="1"></li>
+            <li data-target="#myCarousel5" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="item carousel-item active">
+                <div class="row">
+                    {% for book in booklist5 %}
+                        <div class="col-sm-3">
+                            <a href="{% url 'detail_page' book.btitle %}">
+                                <div class="img-box">
+                                    <img src="/media/{{ book.bcover }}" class="img-responsive img-fluid" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        <div class="item carousel-item">
+            <div class="row">
+                {% for book in booklist5 %}
+                    <div class="col-sm-3">
+                        <a href="{% url 'detail_page' book.btitle %}">
+                            <div class="img-box">
+                                <img src="/media/{{ book.bcover }}" class="img-responsive img-fluid" alt="">
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+{#        <div class="item carousel-item">#}
+{#            <div class="row">#}
+{#                {% for book in booklist5 %}#}
+{#                    {% if book.index <= 4 %}#}
+{#                        <div class="col-sm-3">#}
+{#                            <a href="{% url 'detail_page' book.btitle %}">#}
+{#                                <div class="img-box">#}
+{#                                    <img src="/media/{{ book.bcover }}" class="img-responsive img-fluid" alt="">#}
+{#                                </div>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    {% endif %}#}
+{#               {% endfor %}#}
+{#            </div>#}
+{#        </div>#}
+
+    </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left carousel-control-prev" href="#myCarousel5" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control right carousel-control-next" href="#myCarousel5" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+</div>
